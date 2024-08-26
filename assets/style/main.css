@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/* ベースのスタイル
+------------------------------------------ */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+}
+
+.heading {
+    font-size: 2.625rem;
+    line-height: .9;
+    color: #fa7da3;
+}
+
+h2 h3 {
+    text-align: center;
+}
+
+
+
+
+
+/* 部品
+------------------------------------------ */
+/* フォント */
+.-outfit {
+    font-family: "Outfit", sans-serif;
+}
+
+/* 文字の太さbold */
+.-semibold {
+    font-weight: 600;
+}
+
+.-bold {
+    font-weight: 700;
+}
+
+/* コンテナ */
+.container {
+    margin: auto;
+}
+
+/* flexbox */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+    padding: 1rem 14.5%;
+}
+
+@media (max-width: 950px) {
+    .header {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 3px .5625rem 0 .75rem;
+    }
+}
+
+.header-container {
+    justify-content: space-between;
+    max-width: 63.875rem;
+    margin-inline: auto;
+}
+
+
+/* ロゴ */
+@media (max-width: 767px) {
+    .header__logo {
+        width: 4.5rem;
+    }
+}
+
+
+/* ボタン */
+.header__nav--list {
+    padding-top: .2813rem;
+    column-gap: 1.3125rem;
+}
+
+@media (max-width: 767px) {
+    .header__nav--list {
+        column-gap: .625rem;
+    }
+}
+
+.header__nav--list a {
+    font-size: 1.3125rem;
+    color: #fff;
+    letter-spacing: -.05rem;
+}
+
+@media (max-width: 767px) {
+    .header__nav--list a {
+        font-size: .75rem;
+        letter-spacing: .0125rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: .625rem .6875rem .625rem 1.5rem ;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2.125rem;
+}
+
+@media (max-width: 767px) {
+    .button {
+        padding: .4375rem .4375rem .375rem .625rem;
+    }
+}
+
+.header__nav--list-first .button {
+    background-color: #fa7da3;
+}
+
+.header__nav--list-second .button {
+    background-color: #49c43d;
+}
+
+.header__nav--list-icon {
+    margin-left: .25rem;
+}
+
+@media (max-width: 767px) {
+    .header__nav--list-icon {
+        margin-left: 0;
+    }
+}
