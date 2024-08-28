@@ -62,6 +62,7 @@ h2 h3 {
 .flex {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -71,7 +72,7 @@ h2 h3 {
 /* ヘッダー
 ------------------------------------------ */
 .header {
-    padding: 1rem 14.5%;
+    padding: 1rem 14.5% 1.25rem;
 }
 
 @media (max-width: 950px) {
@@ -82,7 +83,7 @@ h2 h3 {
 
 @media (max-width: 767px) {
     .header {
-        padding: 3px .5625rem 0 .75rem;
+        padding: 3px .5625rem .5625rem .75rem;
     }
 }
 
@@ -155,5 +156,534 @@ h2 h3 {
 @media (max-width: 767px) {
     .header__nav--list-icon {
         margin-left: 0;
+    }
+}
+
+
+
+/* メインビジュアル
+------------------------------------------ */
+.mv {
+    background-color: #fa7da3;
+}
+
+.mv-container {
+    position: relative;
+    max-width: 63.875rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    column-gap: .625rem;
+    padding-bottom: 2.0625rem;
+}
+
+@media (max-width: 980px) {
+    .mv-container {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .mv-container {
+        column-gap: 0;
+    }
+}
+
+
+
+/* 絶対配置 */
+.mv-container__item--image {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 47%;
+    object-view-box: inset(0 0 300px 0);
+    z-index: 0;
+    filter: drop-shadow(6px 6px 10px rgba(255, 255, 255, .25));
+}
+
+@media (max-width: 767px) {
+    .mv-container__item--image {
+        width: 53%;
+        left: 1%;
+    }
+}
+
+.mv-container__item--price {
+    position: absolute;
+    top: 0;
+    right: 2.5%;
+}
+
+@media (max-width: 900px) {
+    .mv-container__item--price {
+        right: 0;
+    }
+}
+
+@media (500px <= width <= 650px ) {
+    .mv-container__item--price {
+        right: 5%;
+    }
+}
+
+.price__item {
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .25);
+    column-gap: 0.3125rem;
+    padding: 2.625rem 3.25rem;
+}
+
+@media (max-width: 900px)  {
+    .price__item {
+        padding: 1.25rem 1.25rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .price__item {
+        padding: 1.25rem 1.375rem 1.25rem 1.5625rem;
+        column-gap: .625rem;
+    }
+}
+
+@media (500px <= width <= 767px ) {
+    .price__item {
+        padding: 2.25rem 3.375rem 2.25rem 3.5625rem;
+    }
+}
+
+
+
+/* テキスト（左部分） */
+.mv-container__item-left {
+    padding-bottom: 38%;
+    width: 55%;
+}
+
+@media (max-width: 980px) {
+    .mv-container__item-left {
+        padding-bottom: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mv-container__item-left {
+        width: 48%;
+        padding-bottom: 63.5%;
+    }
+}
+
+@media (550px <= width <= 767px ) {
+    .mv-container__item-left {
+        padding-bottom: 60%;
+    }
+}
+
+.mv-container__item-left--title {
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    font-size: 7.5rem;
+    line-height: 1.35;
+    letter-spacing: .125rem;
+    margin-left: 1.75rem;
+    text-shadow: 0px 10px 5px rgba(250, 125, 163, .6);
+    z-index: 1;
+}
+
+@media (max-width: 980px) {
+    .mv-container__item-left--title {
+        font-size: 5.3125rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .mv-container__item-left--title {
+        font-size: 2.625rem;
+        margin-left: 0;
+        letter-spacing: 0;
+        margin-top: .75rem;
+    }
+}
+
+@media (550px <= width <= 767px )  {
+    .mv-container__item-left--title {
+        font-size: 62px;
+    }
+} 
+
+.mv-container__item-left--text {
+    font-size: 2.25rem;
+    text-align: end;
+    color: #fff;
+    line-height: 1;
+}
+
+@media (max-width: 980px) {
+    .mv-container__item-left--text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .mv-container__item-left--text {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+}
+
+@media (550px <= width <= 767px ) {
+    .mv-container__item-left--text {
+        font-size: 1.75rem;
+    }
+}
+
+
+
+/* テキスト（左部分） */
+.price__item-left {
+    margin-right: 1.125rem;
+    margin-left: .3438rem;
+}
+
+@media (max-width: 767px) {
+    .price__item-left {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.price__item-left-first {
+    background-color: #fff;
+    width: 6.5625rem;
+    height: 3.1875rem;
+    text-align: center;
+    margin-top: .125rem;
+}
+
+@media (max-width: 767px) {
+    .price__item-left-first {
+        width: 2.9375rem;
+        height: 1.4375rem;
+        margin-top: .3125rem;
+        margin-left: .0625rem;
+    }
+}
+
+@media (651px <= width <= 767px ) {
+    .price__item-left-first {
+        width: 5.9375rem;
+        height: 3.475rem;
+    }
+}
+
+.price__item-left-first--inner {
+    color: #fa7da3;
+    font-size: 1.8281rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 767px) {
+    .price__item-left-first--inner {
+        font-size: .8125rem;
+    }
+}
+
+@media (651px <= width <= 767px ) {
+    .price__item-left-first--inner {
+        font-size: 1.8125rem;
+    }
+}
+
+.price__item-left-second {
+    color: #fff;
+    font-size: 3.375rem;
+    margin-top: 0.375rem;
+    margin-left: 0.1875rem;
+}
+
+@media (max-width: 767px) {
+    .price__item-left-second {
+        font-size: 1.5rem;
+        letter-spacing: -.0625rem;
+        margin-top: .125rem;
+    }
+}
+
+@media (651px <= width <= 767px ) {
+    .price__item-left-second {
+        font-size: 2.5rem;
+    }
+}
+
+.price__item-right--text {
+    color: #fffd7a;
+    font-size: 10.4375rem;
+    line-height: 0.3;
+}
+
+@media (max-width: 767px) {
+    .price__item-right--text {
+        font-size: 4.75rem;
+    }
+}
+
+@media (651px <= width <= 767px ) {
+    .price__item-right--text {
+        font-size: 8.75rem;
+    }
+}
+
+.yen {
+    font-size: 5.0625rem;
+}
+
+@media (max-width: 767px) {
+    .yen {
+        font-size: 2.25rem;
+    }
+}
+
+.price__item-text {
+    color: #fff;
+    font-size: 1.0625rem;
+    text-align: end;
+    margin-right: 3.875rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .price__item-text {
+        font-size: .5625rem;
+        margin-right: 1.5625rem;
+        line-height: 2.5;
+    }
+}
+
+.monthly-fee {
+    font-size: 1.655rem;
+}
+
+@media (max-width: 767px) {
+    .monthly-fee {
+        font-size: .875rem;
+    }
+}
+
+.mv-container__item-right-top {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.mv-container__item-right {
+    width: 43%;
+    margin-top: 19.375rem;
+}
+
+@media (max-width: 767px) {
+    .mv-container__item-right {
+        width: 52%;
+        margin-top: 8.5rem;
+    }
+}
+
+@media (600px <= width <= 767px ) {
+    .mv-container__item-right {
+        margin-top: 10rem;
+    }
+}
+
+.mv-container__item-right--outer {
+    border: 1px solid #fff;
+    margin-bottom: 1.375rem;
+    max-width: 26.4375rem;
+    margin-inline: auto;
+}
+
+@media (max-width: 767px) {
+    .mv-container__item-right--outer {
+        width: 71%;
+        margin-left: 2.6875rem;
+        margin-bottom: .75rem;
+    }
+}
+
+@media (600px <= width <= 767px ) {
+    .mv-container__item-right--outer {
+        width: 76%;
+        margin-bottom: .75rem;
+    }
+}
+
+.mv-container__item-right--inner {
+    font-size: 1.75rem;
+    color: #fff;
+    text-align: center;
+    padding-top: .7188rem;
+    padding-bottom: .75rem;
+}
+
+@media (max-width: 767px) {
+    .mv-container__item-right--inner {
+        font-size: 1.125rem;
+        padding-top: .125rem;
+        padding-bottom: .25rem;
+    }
+}
+
+@media (500px <= width <= 767px ) {
+    .mv-container__item-right--inner {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* 今だけ3回プレゼント（campaign）
+------------------------------------------ */
+.campaign {
+    background-color: #fffedd;
+    padding: 2.375rem 1.25rem 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .campaign {
+        padding: 1.125rem 1.25rem .9375rem;
+
+    }
+}
+
+
+
+/* タイトル */
+.campaign__title--icon-left::after {
+    font-family: "bootstrap-icons";
+    color: #fa7da3;
+    content: "\F657"; /* Slash lg */
+    display: inline-block;
+    transform: rotate(285deg);
+    font-size: 2.625rem;
+    line-height: 1;
+    margin-left: .4375rem;
+    letter-spacing: -.25rem;
+}
+
+@media (max-width: 767px) {
+    .campaign__title--icon-left::after {
+        font-size: 26px;
+    }
+}
+
+.campaign__title--text {
+    font-size: 2.125rem;
+    color: #fa7da3;
+    text-align: center;
+    font-weight: 400;
+    margin-left: .6875rem;
+}
+
+@media (max-width: 767px) {
+    .campaign__title--text {
+        font-size: 1.3125rem;
+    }
+}
+
+.campaign__title--icon-right::after {
+    font-family: "bootstrap-icons";
+    color: #fa7da3;
+    content: "\F657"; /* Slash lg */
+    display: inline-block;
+    transform: rotate(345deg);
+    font-size: 2.625rem;
+    line-height: 1;
+    margin-right: .1875rem;
+}
+
+@media (max-width: 767px) {
+    .campaign__title--icon-right::after {
+        font-size: 1.625rem;
+    }
+}
+
+
+
+/* 囲み枠 */
+.campaign__content {
+    max-width: 34.375rem;
+    margin: 0 auto;
+    border: 1px solid #fa7da3;
+    border-radius: .625rem .625rem .625rem .625rem;
+    margin-top: 1.0625rem;
+}
+
+@media (max-width: 767px) {
+    .campaign__content {
+        margin-top: .6875rem;
+    }
+}
+
+.campaign__content--heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa7da3;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: .625rem .625rem 0 0;
+    line-height: 1.45;
+}
+
+@media (max-width: 767px) {
+    .campaign__content--heading {
+        font-size: 1.3125rem;
+    }
+}
+
+.campaign__content--description {
+    text-align: center;
+    background-color: #fff;
+    color: #fa7da3;
+    font-size: 2.75rem;
+    line-height: 1.3;
+    padding-bottom: .75rem;
+    padding-left: 1.375rem;
+}
+
+@media (max-width: 767px) {
+    .campaign__content--description {
+        font-size: 1.6875rem;
+        padding-right: .625rem;
+        padding-bottom: .375rem;
+    }
+}
+
+.campaign__content--description-times {
+    font-size: 4.25rem;
+}
+
+@media (max-width: 767px) {
+    .campaign__content--description-times {
+        font-size: 42px;
+    }
+}
+
+
+/* テキスト */
+.campaign__text {
+    font-size: .875rem;
+    text-align: center;
+    color: #333;
+    margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+    .campaign__text {
+        font-size: .625rem;
+        margin-top: .4688rem;
     }
 }
