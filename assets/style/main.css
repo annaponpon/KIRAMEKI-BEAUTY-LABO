@@ -1110,3 +1110,17 @@ h2 h3 {
         letter-spacing: 0;
     }
 }
+
+
+/* CV（cv）
+------------------------------------------ */
+/* 調整 */
+.cv-2 {
+    padding-top: 3.1875rem;
+}
+
+@media (max-width: 767px) {
+    .cv-2 {
+        padding-top: 1.5625rem;
+    }
+}
