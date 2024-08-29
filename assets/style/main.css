@@ -1124,3 +1124,121 @@ h2 h3 {
         padding-top: 1.5625rem;
     }
 }
+
+
+
+
+
+/* 他にも選べる2つのコース（other-courses）
+------------------------------------------ */
+/* タイトル */
+.other-courses {
+    margin-top: 3.25rem;
+}
+
+@media (max-width: 767px) {
+    .other-courses {
+        margin-top: 2.75rem;
+    }
+}
+
+.other-courses__title--description {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    font-weight: 400;
+    margin-left: .4375rem;
+}
+
+@media (max-width: 767px) {
+    .other-courses__title--description {
+        font-size: 1.125rem;
+    }
+}
+
+.other-courses__title--title-content-text {
+    margin-inline: .8125rem;
+}
+
+@media (max-width: 767px) {
+    .other-courses__title--title-content-text {
+        margin-inline: .5rem;
+        letter-spacing: 0;
+    }
+}
+
+
+
+/* コンテンツ */
+.other-courses__body {
+    column-gap: 1.9375rem;
+}
+
+@media (max-width: 767px) {
+    .other-courses__body {
+        flex-direction: column;
+        row-gap: .4375rem;
+    }
+}
+
+.other-courses__body--item-left,
+.other-courses__body--item-right {
+    max-width: 21.875rem;
+    margin-top: 2.4375rem;
+    margin-inline: unset;
+    padding-bottom: 1.125rem;
+}
+
+@media (max-width: 767px) {
+    .other-courses__body--item-left,
+    .other-courses__body--item-right {
+        margin-top: 1.5rem;
+    }
+}
+
+.other-courses__body--item-heading {
+    background-color: #fdf0f5;
+    color: #fa7da3;
+    padding-top: .5625rem;
+    padding-bottom: .5rem;
+}
+
+.other-courses__body--item-description {
+    font-size: 1.125rem;
+    color: #333;
+    line-height: 1.57;
+    padding: .5625rem 1.25rem .75rem;
+}
+
+@media (max-width: 767px) {
+    .other-courses__body--item-description {
+        font-size: .875rem;
+        line-height: 1.5;
+        padding-top: .9375rem;
+    }
+}
+
+.other-courses__body--item-left .other-courses__body--item-description {
+    letter-spacing: 0;
+}
+
+@media (max-width: 767px) {
+    .other-courses__body--item-left .other-courses__body--item-description {
+        letter-spacing: .0063rem;
+    }
+}
+
+.other-courses__body--item-right .other-courses__body--item-description {
+    letter-spacing: -.0488rem;
+}
+
+@media (max-width: 767px) {
+    .other-courses__body--item-right .other-courses__body--item-description {
+        letter-spacing: 0;
+    }
+}
+
+.other-courses__body--item-image {
+    display: block;
+    margin-inline: auto;
+}
